@@ -1,0 +1,197 @@
+---
+---
+// Color variables:
+$white: white;
+
+// Mixins:
+@mixin background-img($url, $height) {
+  background: url($url);
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: $height;
+}
+
+@mixin astro-button() {
+  margin: auto;
+  display: block;
+  height: 52px;
+  width: 220px;
+  margin-top: 45px;
+  background-color: $white;
+  cursor: pointer;
+}
+
+ * {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+h1, h2, h3, p, .home, .post-link {
+  color: $white;
+  text-align: center;
+  padding: 5px;
+}
+
+header {
+ @include background-img('../images/astrology-header.jpg',777px );
+}
+
+.heading {
+  background:rgba(255, 255, 255, 0.219);
+  opacity: 11;
+  filter: alpha(opacity=50);
+  height: 128px;
+  margin-top: 35px;
+}
+
+.heading-text {
+  padding: 45px;
+}
+
+button {
+ @include astro-button();
+}
+
+nav {
+  float: right;
+  list-style: none;
+  margin-top: 30px;
+}
+
+ a {
+  color: $white;
+  text-decoration: none;
+  margin: 15px;
+}
+
+.rss-subscribe {
+  display: none;
+}
+
+.first-section {
+  margin-top: 50px;
+  font-weight: 900;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.second-seciton {
+  @include background-img('../images/section-2.png',800px );
+}
+
+footer {
+  @include background-img('../images/footer-img.jpeg',721px );
+
+}
+
+.articles {
+  text-align: center;
+  background:rgba(79, 0, 127, 0.679);
+  opacity: 11;
+  filter: alpha(opacity=50);
+  height: 376px;
+}
+
+.contact {
+  float: left;
+  padding: 25px;
+  margin-top: -90px;
+}
+
+.follow {
+  float: right;
+  margin-top: 90px;
+  margin-right: 25px;
+  margin-top: -2px;
+}
+
+.post-link {
+  text-decoration: none;
+  padding: 100px;
+}
+
+.post-list-heading {
+  display: none;
+}
+
+.test-img {
+  height: 239px;
+  width: 256px;
+  margin: 15px;
+}
+
+.image-container {
+  margin: 0 auto;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.read-more-btn {
+  width: 111px;
+  height: 36px;
+}
+
+input[type="submit"] {
+  font-family: FontAwesome;
+}
+
+.search-box {
+  width: 851px;
+  height: 25px;
+  border-radius: 50px;
+  border-color: black;
+  margin-top: 50px;
+  outline-width: 0;
+  margin: 18px;
+}
+
+.zodiac-info {
+  margin: 100px auto 0;
+  padding: 0 20px;
+}
+
+.blog-entry {
+  display: flex;
+  margin-top: 20px;
+}
+
+.blog-entry img {
+  flex-shrink: 0;
+  height: 120px;
+  width: 120px;
+}
+
+.blog-detail {
+  color: black;
+  margin-left: 10px;
+}
+
+.blog-detail label {
+  font-weight: bold;
+}
+
+.blog-detail p {
+  margin: 5px 0;
+}
+
+.blog-detail small {
+  font-style: italic;
+}
+
+.blog-detail p {
+  color: black;
+}
+
+.sign-archetypes {
+  float: right;
+}
+
+.signs-heading {
+  color: black;
+}
