@@ -1,5 +1,6 @@
 ---
 ---
+
 // Color variables:
 $white: white;
 
@@ -28,7 +29,6 @@ $white: white;
   padding: 0px;
   font-family: 'Roboto', sans-serif;
 }
-
 
 h1, h2, h3, p, .home, .post-link {
   color: $white;
@@ -193,5 +193,24 @@ input[type="submit"] {
 }
 
 .signs-heading {
+  color: black;
+  text-align: center;
+}
+
+.sign-icon {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+
+.sign-icons-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  float: right;
+  margin: 20px;
+}
+
+.sign-paragraph {
   color: black;
 }
